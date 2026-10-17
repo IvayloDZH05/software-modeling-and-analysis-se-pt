@@ -1,0 +1,353 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="glovo-logical" name="Logical model - Crow foot">
+    <mxGraphModel dx="2515" dy="1750" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1800" background="light-dark(#FFFFFF,#121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=0;fontSize=30;fontStyle=1;fontColor=#123c3a;align=left;" value="GLOVO | Logical model" vertex="1">
+          <mxGeometry height="45" width="1650" x="60" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=0;fontSize=18;fontColor=#52666c;align=left;" value="12 tables | PostgreSQL types | Crow’s Foot | Food delivery scope" vertex="1">
+          <mxGeometry height="30" width="1650" x="60" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Customers" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="Customers" vertex="1">
+          <mxGeometry height="247" width="350" x="60" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Customers_0" parent="Customers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK CustomerID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Customers_1" parent="Customers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FirstName : varchar(80)" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="Customers_2" parent="Customers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="LastName : varchar(80)" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Customers_3" parent="Customers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="UQ Email : varchar(254)" vertex="1">
+          <mxGeometry height="29" width="350" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="Customers_4" parent="Customers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Phone : varchar(30)" vertex="1">
+          <mxGeometry height="29" width="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Customers_5" parent="Customers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="RegisteredAt : timestamptz" vertex="1">
+          <mxGeometry height="29" width="350" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="Customers_6" parent="Customers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="IsActive : boolean" vertex="1">
+          <mxGeometry height="29" width="350" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="Addresses" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="Addresses" vertex="1">
+          <mxGeometry height="305" width="350" x="500" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Addresses_0" parent="Addresses" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK AddressID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Addresses_1" parent="Addresses" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FK CustomerID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="Addresses_2" parent="Addresses" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Label : varchar(80) ?" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Addresses_3" parent="Addresses" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="City : varchar(100)" vertex="1">
+          <mxGeometry height="29" width="350" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="Addresses_4" parent="Addresses" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="District : varchar(100) ?" vertex="1">
+          <mxGeometry height="29" width="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Addresses_5" parent="Addresses" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Street : varchar(150)" vertex="1">
+          <mxGeometry height="29" width="350" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="Addresses_6" parent="Addresses" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="StreetNumber : varchar(20)" vertex="1">
+          <mxGeometry height="29" width="350" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="Addresses_7" parent="Addresses" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PostalCode : varchar(20) ?" vertex="1">
+          <mxGeometry height="29" width="350" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="Addresses_8" parent="Addresses" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="DeliveryInstructions : text ?" vertex="1">
+          <mxGeometry height="29" width="350" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="Restaurants" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="Restaurants" vertex="1">
+          <mxGeometry height="305" width="350" x="940" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Restaurants_0" parent="Restaurants" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK RestaurantID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Restaurants_1" parent="Restaurants" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Name : varchar(150)" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="Restaurants_2" parent="Restaurants" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Phone : varchar(30)" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Restaurants_3" parent="Restaurants" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Email : varchar(254) ?" vertex="1">
+          <mxGeometry height="29" width="350" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="Restaurants_4" parent="Restaurants" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="StreetAddress : text" vertex="1">
+          <mxGeometry height="29" width="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Restaurants_5" parent="Restaurants" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="OpeningTime : time" vertex="1">
+          <mxGeometry height="29" width="350" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="Restaurants_6" parent="Restaurants" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="ClosingTime : time" vertex="1">
+          <mxGeometry height="29" width="350" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="Restaurants_7" parent="Restaurants" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="MinimumOrderAmount : numeric(12,2)" vertex="1">
+          <mxGeometry height="29" width="350" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="Restaurants_8" parent="Restaurants" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="IsActive : boolean" vertex="1">
+          <mxGeometry height="29" width="350" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="Categories" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="Categories" vertex="1">
+          <mxGeometry height="131" width="350" x="1380" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Categories_0" parent="Categories" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK CategoryID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Categories_1" parent="Categories" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="UQ Name : varchar(100)" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="Categories_2" parent="Categories" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Description : text ?" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderStatusHistory" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="OrderStatusHistory" vertex="1">
+          <mxGeometry height="189" width="350" x="60" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderStatusHistory_0" parent="OrderStatusHistory" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK HistoryID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderStatusHistory_1" parent="OrderStatusHistory" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FK OrderID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderStatusHistory_2" parent="OrderStatusHistory" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="OldStatus : varchar(30) ?" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderStatusHistory_3" parent="OrderStatusHistory" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="NewStatus : varchar(30)" vertex="1">
+          <mxGeometry height="29" width="350" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderStatusHistory_4" parent="OrderStatusHistory" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="ChangedAt : timestamptz" vertex="1">
+          <mxGeometry height="29" width="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Orders" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="Orders" vertex="1">
+          <mxGeometry height="276" width="350" x="500" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="Orders_0" parent="Orders" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK OrderID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Orders_1" parent="Orders" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FK CustomerID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="Orders_2" parent="Orders" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FK AddressID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Orders_3" parent="Orders" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FK RestaurantID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="Orders_4" parent="Orders" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="OrderedAt : timestamptz" vertex="1">
+          <mxGeometry height="29" width="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Orders_5" parent="Orders" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Status : varchar(30)" vertex="1">
+          <mxGeometry height="29" width="350" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="Orders_6" parent="Orders" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="DeliveryFee : numeric(12,2)" vertex="1">
+          <mxGeometry height="29" width="350" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="Orders_7" parent="Orders" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Notes : text ?" vertex="1">
+          <mxGeometry height="29" width="350" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="Products" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="Products" vertex="1">
+          <mxGeometry height="276" width="350" x="940" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="Products_0" parent="Products" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK ProductID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Products_1" parent="Products" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FK RestaurantID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="Products_2" parent="Products" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FK CategoryID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Products_3" parent="Products" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Name : varchar(150)" vertex="1">
+          <mxGeometry height="29" width="350" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="Products_4" parent="Products" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Description : text ?" vertex="1">
+          <mxGeometry height="29" width="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Products_5" parent="Products" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Price : numeric(12,2)" vertex="1">
+          <mxGeometry height="29" width="350" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="Products_6" parent="Products" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="IsAvailable : boolean" vertex="1">
+          <mxGeometry height="29" width="350" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="Products_7" parent="Products" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="CreatedAt : timestamptz" vertex="1">
+          <mxGeometry height="29" width="350" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderItems" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="OrderItems" vertex="1">
+          <mxGeometry height="160" width="350" x="1380" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderItems_0" parent="OrderItems" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK, FK OrderID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderItems_1" parent="OrderItems" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK, FK ProductID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderItems_2" parent="OrderItems" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Quantity : integer" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="OrderItems_3" parent="OrderItems" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="UnitPrice : numeric(12,2)" vertex="1">
+          <mxGeometry height="29" width="350" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="PaymentMethods" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="PaymentMethods" vertex="1">
+          <mxGeometry height="131" width="350" x="60" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="PaymentMethods_0" parent="PaymentMethods" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK PaymentMethodID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="PaymentMethods_1" parent="PaymentMethods" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="UQ Name : varchar(80)" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="PaymentMethods_2" parent="PaymentMethods" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="IsActive : boolean" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="Payments" vertex="1">
+          <mxGeometry height="247" width="350" x="500" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_0" parent="Payments" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK PaymentID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_1" parent="Payments" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FK OrderID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_2" parent="Payments" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FK PaymentMethodID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_3" parent="Payments" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Amount : numeric(12,2)" vertex="1">
+          <mxGeometry height="29" width="350" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_4" parent="Payments" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Status : varchar(30)" vertex="1">
+          <mxGeometry height="29" width="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_5" parent="Payments" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PaidAt : timestamptz ?" vertex="1">
+          <mxGeometry height="29" width="350" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_6" parent="Payments" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="UQ TransactionReference : varchar(150) ?" vertex="1">
+          <mxGeometry height="29" width="350" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="Deliveries" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="Deliveries" vertex="1">
+          <mxGeometry height="276" width="350" x="940" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="Deliveries_0" parent="Deliveries" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK DeliveryID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Deliveries_1" parent="Deliveries" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="UQ, FK OrderID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="Deliveries_2" parent="Deliveries" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FK CourierID : bigint ?" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Deliveries_3" parent="Deliveries" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Status : varchar(30)" vertex="1">
+          <mxGeometry height="29" width="350" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="Deliveries_4" parent="Deliveries" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="AssignedAt : timestamptz ?" vertex="1">
+          <mxGeometry height="29" width="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Deliveries_5" parent="Deliveries" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PickedUpAt : timestamptz ?" vertex="1">
+          <mxGeometry height="29" width="350" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="Deliveries_6" parent="Deliveries" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="DeliveredAt : timestamptz ?" vertex="1">
+          <mxGeometry height="29" width="350" y="218" as="geometry" />
+        </mxCell>
+        <mxCell id="Deliveries_7" parent="Deliveries" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="EstimatedMinutes : integer ?" vertex="1">
+          <mxGeometry height="29" width="350" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="Couriers" parent="1" style="swimlane;html=0;startSize=44;horizontal=1;rounded=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#26776d;fontColor=#123c3a;fontStyle=1;fontSize=19;collapsible=0;" value="Couriers" vertex="1">
+          <mxGeometry height="218" width="350" x="1380" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="Couriers_0" parent="Couriers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="PK CourierID : bigint" vertex="1">
+          <mxGeometry height="29" width="350" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Couriers_1" parent="Couriers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="FirstName : varchar(80)" vertex="1">
+          <mxGeometry height="29" width="350" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="Couriers_2" parent="Couriers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="LastName : varchar(80)" vertex="1">
+          <mxGeometry height="29" width="350" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Couriers_3" parent="Couriers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="Phone : varchar(30)" vertex="1">
+          <mxGeometry height="29" width="350" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="Couriers_4" parent="Couriers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="VehicleType : varchar(30)" vertex="1">
+          <mxGeometry height="29" width="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Couriers_5" parent="Couriers" style="text;html=0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=14;fontColor=#172f36;fillColor=none;strokeColor=none;" value="IsAvailable : boolean" vertex="1">
+          <mxGeometry height="29" width="350" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="rel0" edge="1" parent="1" source="Customers" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=1;exitY=0.3;entryX=0;entryY=0.3;" target="Addresses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="Customers" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=0.5;exitY=1;entryX=0;entryY=0.2;" target="Orders">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="550" />
+              <mxPoint x="460" y="550" />
+              <mxPoint x="460" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="Addresses" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="Orders">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" edge="1" parent="1" source="Restaurants" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=0;exitY=0.8;entryX=1;entryY=0.15;" target="Orders">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="430" />
+              <mxPoint x="900" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel4" edge="1" parent="1" source="Restaurants" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="Products">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel5" edge="1" parent="1" source="Categories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=0.5;exitY=1;entryX=1;entryY=0.2;" target="Products">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1555" y="550" />
+              <mxPoint x="1320" y="550" />
+              <mxPoint x="1320" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel6" edge="1" parent="1" source="Orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERoneToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=1;exitY=0.85;entryX=0.5;entryY=1;" target="OrderItems">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="890" y="970" />
+              <mxPoint x="1555" y="970" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel7" edge="1" parent="1" source="Products" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=1;exitY=0.4;entryX=0;entryY=0.4;" target="OrderItems">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel8" edge="1" parent="1" source="Orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=0;exitY=0.6;entryX=1;entryY=0.6;" target="OrderStatusHistory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel9" edge="1" parent="1" source="Orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="Payments">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel10" edge="1" parent="1" source="PaymentMethods" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="Payments">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel11" edge="1" parent="1" source="Orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERmandOne;endArrow=ERzeroToOne;startFill=0;endFill=0;startSize=16;endSize=16;exitX=1;exitY=0.65;entryX=0.5;entryY=0;" target="Deliveries">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="910" y="850" />
+              <mxPoint x="910" y="1080" />
+              <mxPoint x="1115" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel12" edge="1" parent="1" source="Couriers" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#52666c;strokeWidth=2;startArrow=ERzeroToOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=16;endSize=16;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="Deliveries">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="notes" parent="1" style="rounded=1;whiteSpace=wrap;html=0;align=left;verticalAlign=top;spacing=16;fontSize=16;fontColor=#123c3a;fillColor=#eef6f4;strokeColor=#b9d6d0;" value="LEGEND AND IMPLEMENTATION RULES&#xa;PK = primary key   |   FK = foreign key   |   UQ = unique   |   ? = nullable; all other columns are NOT NULL&#xa;Crow’s Foot: circle = zero, bar = one, fork = many. OrderItems has composite PK (OrderID, ProductID).&#xa;Orders–Products M:N is resolved through OrderItems. Each order must have at least one item.&#xa;UnitPrice is the historical sale price. All money amounts are EUR; prices/fees &gt;= 0, Quantity &gt; 0, payment Amount &gt; 0.&#xa;Address must belong to the ordering customer; all ordered products must belong to the selected restaurant.&#xa;Successful payments must not exceed order total (items + delivery fee). Cross-table rules require transactional logic.&#xa;Deliveries.OrderID is UNIQUE: at most one delivery per order. Courier assignment is optional.&#xa;RegisteredAt / OrderedAt / CreatedAt / ChangedAt: default current_timestamp; identity PKs except OrderItems." vertex="1">
+          <mxGeometry height="235" width="1670" x="60" y="1510" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
