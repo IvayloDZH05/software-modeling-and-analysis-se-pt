@@ -1,0 +1,680 @@
+<mxfile host="app.diagrams.net" pages="3">
+  <diagram id="dw-1" name="1 - FactOrderItems">
+    <mxGraphModel dx="2012" dy="1400" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1450" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=0;align=left;verticalAlign=top;fontSize=30;fontColor=#183c38;whiteSpace=wrap;" value="GLOVO / DATA WAREHOUSE / 01" vertex="1">
+          <mxGeometry height="50" width="1450" x="60" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=0;align=left;verticalAlign=top;fontSize=19;fontColor=#183c38;whiteSpace=wrap;" value="FactOrderItems | UML database notation | PostgreSQL | schema: dw" vertex="1">
+          <mxGeometry height="35" width="1450" x="60" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="DimDate" parent="1" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" value="«table»&#xa;DimDate" vertex="1">
+          <mxGeometry height="298" width="380" x="60" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="DimDate_0" parent="DimDate" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="DateKey : integer {PK}" vertex="1">
+          <mxGeometry height="26" width="380" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DimDate_1" parent="DimDate" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="FullDate : date {UQ}" vertex="1">
+          <mxGeometry height="26" width="380" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DimDate_2" parent="DimDate" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="Year : smallint" vertex="1">
+          <mxGeometry height="26" width="380" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="DimDate_3" parent="DimDate" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="Quarter : smallint" vertex="1">
+          <mxGeometry height="26" width="380" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="DimDate_4" parent="DimDate" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="Month : smallint" vertex="1">
+          <mxGeometry height="26" width="380" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="DimDate_5" parent="DimDate" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="MonthName : varchar(20)" vertex="1">
+          <mxGeometry height="26" width="380" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="DimDate_6" parent="DimDate" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="DayOfMonth : smallint" vertex="1">
+          <mxGeometry height="26" width="380" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="DimDate_7" parent="DimDate" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="DayOfWeekISO : smallint" vertex="1">
+          <mxGeometry height="26" width="380" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="DimDate_8" parent="DimDate" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="IsWeekend : boolean" vertex="1">
+          <mxGeometry height="26" width="380" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="DimCustomer" parent="1" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" value="«table»&#xa;DimCustomer" vertex="1">
+          <mxGeometry height="220" width="380" x="610" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="DimCustomer_0" parent="DimCustomer" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="CustomerKey : integer {PK}" vertex="1">
+          <mxGeometry height="26" width="380" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DimCustomer_1" parent="DimCustomer" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="CustomerID : bigint {UQ, source}" vertex="1">
+          <mxGeometry height="26" width="380" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DimCustomer_2" parent="DimCustomer" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="FirstName : varchar(80)" vertex="1">
+          <mxGeometry height="26" width="380" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="DimCustomer_3" parent="DimCustomer" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="LastName : varchar(80)" vertex="1">
+          <mxGeometry height="26" width="380" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="DimCustomer_4" parent="DimCustomer" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="RegisteredAt : timestamptz" vertex="1">
+          <mxGeometry height="26" width="380" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="DimCustomer_5" parent="DimCustomer" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="IsActive : boolean" vertex="1">
+          <mxGeometry height="26" width="380" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="DimRestaurant" parent="1" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" value="«table»&#xa;DimRestaurant" vertex="1">
+          <mxGeometry height="194" width="380" x="1160" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="DimRestaurant_0" parent="DimRestaurant" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="RestaurantKey : integer {PK}" vertex="1">
+          <mxGeometry height="26" width="380" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DimRestaurant_1" parent="DimRestaurant" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="RestaurantID : bigint {UQ, source}" vertex="1">
+          <mxGeometry height="26" width="380" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DimRestaurant_2" parent="DimRestaurant" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="Name : varchar(150)" vertex="1">
+          <mxGeometry height="26" width="380" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="DimRestaurant_3" parent="DimRestaurant" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="StreetAddress : text" vertex="1">
+          <mxGeometry height="26" width="380" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="DimRestaurant_4" parent="DimRestaurant" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="IsActive : boolean" vertex="1">
+          <mxGeometry height="26" width="380" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="DimLocation" parent="1" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" value="«table»&#xa;DimLocation" vertex="1">
+          <mxGeometry height="194" width="380" x="60" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="DimLocation_0" parent="DimLocation" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="LocationKey : integer {PK}" vertex="1">
+          <mxGeometry height="26" width="380" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DimLocation_1" parent="DimLocation" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="AddressID : bigint {UQ, source}" vertex="1">
+          <mxGeometry height="26" width="380" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DimLocation_2" parent="DimLocation" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="City : varchar(100)" vertex="1">
+          <mxGeometry height="26" width="380" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="DimLocation_3" parent="DimLocation" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="District : varchar(100) [0..1]" vertex="1">
+          <mxGeometry height="26" width="380" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="DimLocation_4" parent="DimLocation" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="PostalCode : varchar(20) [0..1]" vertex="1">
+          <mxGeometry height="26" width="380" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="DimProduct" parent="1" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" value="«table»&#xa;DimProduct" vertex="1">
+          <mxGeometry height="194" width="380" x="1160" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="DimProduct_0" parent="DimProduct" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="ProductKey : integer {PK}" vertex="1">
+          <mxGeometry height="26" width="380" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DimProduct_1" parent="DimProduct" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="ProductID : bigint {UQ, source}" vertex="1">
+          <mxGeometry height="26" width="380" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="DimProduct_2" parent="DimProduct" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="Name : varchar(150)" vertex="1">
+          <mxGeometry height="26" width="380" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="DimProduct_3" parent="DimProduct" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="CategoryName : varchar(100)" vertex="1">
+          <mxGeometry height="26" width="380" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="DimProduct_4" parent="DimProduct" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="IsAvailable : boolean" vertex="1">
+          <mxGeometry height="26" width="380" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems" parent="1" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#ffe6a7;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" value="«table»&#xa;FactOrderItems" vertex="1">
+          <mxGeometry height="350" width="400" x="600" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems_0" parent="FactOrderItems" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="OrderItemFactKey : bigint {PK}" vertex="1">
+          <mxGeometry height="26" width="400" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems_1" parent="FactOrderItems" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="OrderID : bigint {source}" vertex="1">
+          <mxGeometry height="26" width="400" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems_2" parent="FactOrderItems" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="OrderDateKey : integer {FK}" vertex="1">
+          <mxGeometry height="26" width="400" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems_3" parent="FactOrderItems" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="CustomerKey : integer {FK}" vertex="1">
+          <mxGeometry height="26" width="400" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems_4" parent="FactOrderItems" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="RestaurantKey : integer {FK}" vertex="1">
+          <mxGeometry height="26" width="400" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems_5" parent="FactOrderItems" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="LocationKey : integer {FK}" vertex="1">
+          <mxGeometry height="26" width="400" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems_6" parent="FactOrderItems" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="ProductKey : integer {FK}" vertex="1">
+          <mxGeometry height="26" width="400" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems_7" parent="FactOrderItems" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="OrderStatus : varchar(30)" vertex="1">
+          <mxGeometry height="26" width="400" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems_8" parent="FactOrderItems" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="Quantity : integer" vertex="1">
+          <mxGeometry height="26" width="400" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems_9" parent="FactOrderItems" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="UnitPrice : numeric(12,2)" vertex="1">
+          <mxGeometry height="26" width="400" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="FactOrderItems_10" parent="FactOrderItems" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" value="ItemAmount : numeric(18,2)" vertex="1">
+          <mxGeometry height="26" width="400" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0" edge="1" parent="1" source="DimDate" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=1;exitY=0.75;entryX=0;entryY=0.12;" target="FactOrderItems">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="383" />
+              <mxPoint x="480" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge0a" parent="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry height="24" width="40" x="448" y="355.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0b" parent="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry height="24" width="40" x="552" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="DimCustomer" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="FactOrderItems">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1a" parent="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry height="24" width="40" x="812" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1b" parent="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry height="24" width="40" x="812" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="DimRestaurant" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=0;exitY=0.75;entryX=1;entryY=0.12;" target="FactOrderItems">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1090" y="305" />
+              <mxPoint x="1090" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2a" parent="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry height="24" width="40" x="1112" y="277.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2b" parent="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry height="24" width="40" x="1008" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="DimLocation" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=1;exitY=0.4;entryX=0;entryY=0.7;" target="FactOrderItems">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="798" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3a" parent="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry height="24" width="40" x="448" y="769.6" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3b" parent="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry height="24" width="40" x="552" y="677" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="DimProduct" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=0;exitY=0.4;entryX=1;entryY=0.7;" target="FactOrderItems">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="798" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4a" parent="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry height="24" width="40" x="1112" y="769.6" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4b" parent="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry height="24" width="40" x="1008" y="677" as="geometry" />
+        </mxCell>
+        <mxCell id="notes" parent="1" style="rounded=1;html=0;whiteSpace=wrap;align=left;verticalAlign=top;spacing=16;fontSize=16;fontColor=#163c35;fillColor=#f0f6f4;strokeColor=#b9d6d0;" value="Grain: one row per (OrderID, ProductKey); UNIQUE(OrderID, ProductKey).&#xa;ItemAmount = Quantity x UnitPrice. Historical price comes from order_items.unit_price.&#xa;All order items are loaded, including cancelled orders. For completed sales, filter OrderStatus = delivered.&#xa;Count orders using COUNT(DISTINCT OrderID), not the number of item rows.&#xa;Delivery fees are excluded here to avoid repeating a fee for every product.&#xa;&#xa;SHARED MODEL / 3 FACT TABLES + 7 DISTINCT DIMENSIONS&#xa;Repeated dimensions across pages are the same physical tables; attributes use Type 1 updates (no SCD history).&#xa;OrderDateKey -&gt; DimDate.DateKey; all other FK names match the dimension PK names. All FK columns are NOT NULL.&#xa;DateKey = YYYYMMDD from the order timestamp in Europe/Sofia. Other dimension keys are warehouse surrogate keys.&#xa;[0..1] = nullable attribute; all unmarked columns are NOT NULL. PK = primary key; UQ = unique; FK = foreign key.&#xa;Load scope: orders.notes LIKE SAMPLE-2026-%, including related payments/deliveries. Exclude the demo order.&#xa;Never join raw fact tables by OrderID for aggregation: aggregate each fact to the desired level first." vertex="1">
+          <mxGeometry height="405" width="1480" x="60" y="1000" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dw-2" name="2 - FactPayments">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1450" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="GLOVO / DATA WAREHOUSE / 02" style="text;html=0;align=left;verticalAlign=top;fontSize=30;fontColor=#183c38;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="30" width="1450" height="50" />
+        </mxCell>
+        <mxCell id="subtitle" value="FactPayments | UML database notation | PostgreSQL | schema: dw" style="text;html=0;align=left;verticalAlign=top;fontSize=19;fontColor=#183c38;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="85" width="1450" height="35" />
+        </mxCell>
+        <mxCell id="DimDate" value="«table»&#xa;DimDate" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="160" width="380" height="298" />
+        </mxCell>
+        <mxCell id="DimDate_0" value="DateKey : integer {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="64" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_1" value="FullDate : date {UQ}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="90" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_2" value="Year : smallint" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="116" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_3" value="Quarter : smallint" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="142" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_4" value="Month : smallint" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="168" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_5" value="MonthName : varchar(20)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="194" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_6" value="DayOfMonth : smallint" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="220" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_7" value="DayOfWeekISO : smallint" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="246" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_8" value="IsWeekend : boolean" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="272" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer" value="«table»&#xa;DimCustomer" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="610" y="160" width="380" height="220" />
+        </mxCell>
+        <mxCell id="DimCustomer_0" value="CustomerKey : integer {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="64" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer_1" value="CustomerID : bigint {UQ, source}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="90" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer_2" value="FirstName : varchar(80)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="116" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer_3" value="LastName : varchar(80)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="142" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer_4" value="RegisteredAt : timestamptz" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="168" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer_5" value="IsActive : boolean" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="194" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimRestaurant" value="«table»&#xa;DimRestaurant" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1160" y="160" width="380" height="194" />
+        </mxCell>
+        <mxCell id="DimRestaurant_0" value="RestaurantKey : integer {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimRestaurant">
+          <mxGeometry as="geometry" x="0" y="64" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimRestaurant_1" value="RestaurantID : bigint {UQ, source}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimRestaurant">
+          <mxGeometry as="geometry" x="0" y="90" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimRestaurant_2" value="Name : varchar(150)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimRestaurant">
+          <mxGeometry as="geometry" x="0" y="116" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimRestaurant_3" value="StreetAddress : text" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimRestaurant">
+          <mxGeometry as="geometry" x="0" y="142" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimRestaurant_4" value="IsActive : boolean" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimRestaurant">
+          <mxGeometry as="geometry" x="0" y="168" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimLocation" value="«table»&#xa;DimLocation" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="720" width="380" height="194" />
+        </mxCell>
+        <mxCell id="DimLocation_0" value="LocationKey : integer {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimLocation">
+          <mxGeometry as="geometry" x="0" y="64" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimLocation_1" value="AddressID : bigint {UQ, source}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimLocation">
+          <mxGeometry as="geometry" x="0" y="90" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimLocation_2" value="City : varchar(100)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimLocation">
+          <mxGeometry as="geometry" x="0" y="116" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimLocation_3" value="District : varchar(100) [0..1]" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimLocation">
+          <mxGeometry as="geometry" x="0" y="142" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimLocation_4" value="PostalCode : varchar(20) [0..1]" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimLocation">
+          <mxGeometry as="geometry" x="0" y="168" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimPaymentMethod" value="«table»&#xa;DimPaymentMethod" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1160" y="720" width="380" height="168" />
+        </mxCell>
+        <mxCell id="DimPaymentMethod_0" value="PaymentMethodKey : integer {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimPaymentMethod">
+          <mxGeometry as="geometry" x="0" y="64" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimPaymentMethod_1" value="PaymentMethodID : bigint {UQ, source}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimPaymentMethod">
+          <mxGeometry as="geometry" x="0" y="90" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimPaymentMethod_2" value="Name : varchar(80)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimPaymentMethod">
+          <mxGeometry as="geometry" x="0" y="116" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimPaymentMethod_3" value="IsActive : boolean" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimPaymentMethod">
+          <mxGeometry as="geometry" x="0" y="142" width="380" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments" value="«table»&#xa;FactPayments" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#ffe6a7;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="600" y="460" width="400" height="376" />
+        </mxCell>
+        <mxCell id="FactPayments_0" value="PaymentFactKey : bigint {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="64" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments_1" value="PaymentID : bigint {UQ, source}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="90" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments_2" value="OrderID : bigint {source}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="116" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments_3" value="OrderDateKey : integer {FK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="142" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments_4" value="CustomerKey : integer {FK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="168" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments_5" value="RestaurantKey : integer {FK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="194" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments_6" value="LocationKey : integer {FK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="220" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments_7" value="PaymentMethodKey : integer {FK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="246" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments_8" value="PaymentStatus : varchar(30)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="272" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments_9" value="Amount : numeric(12,2)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="298" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments_10" value="SuccessfulAmount : numeric(12,2)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="324" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactPayments_11" value="PaidAt : timestamptz [0..1]" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactPayments">
+          <mxGeometry as="geometry" x="0" y="350" width="400" height="26" />
+        </mxCell>
+        <mxCell id="edge0" edge="1" parent="1" source="DimDate" target="FactPayments" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=1;exitY=0.75;entryX=0;entryY=0.12;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="480" y="383" />
+              <mxPoint x="480" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge0a" value="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="448" y="355.5" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge0b" value="0..*" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="552" y="477.12" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="DimCustomer" target="FactPayments" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge1a" value="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="812.0" y="388" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge1b" value="0..*" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="812.0" y="430" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="DimRestaurant" target="FactPayments" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=0;exitY=0.75;entryX=1;entryY=0.12;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1090" y="305" />
+              <mxPoint x="1090" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2a" value="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1112" y="277.5" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge2b" value="0..*" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1008" y="477.12" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="DimLocation" target="FactPayments" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=1;exitY=0.4;entryX=0;entryY=0.7;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="490" y="798" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3a" value="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="448" y="769.6" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge3b" value="0..*" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="552" y="695.2" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="DimPaymentMethod" target="FactPayments" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=0;exitY=0.4;entryX=1;entryY=0.7;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1100" y="798" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4a" value="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1112" y="759.2" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge4b" value="0..*" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1008" y="695.2" width="40" height="24" />
+        </mxCell>
+        <mxCell id="notes" value="Grain: one row per source payment record; PaymentID is UNIQUE.&#xa;SuccessfulAmount = Amount when PaymentStatus = successful; otherwise 0.&#xa;SUM(Amount) includes failed attempts: use SUM(SuccessfulAmount) for collected money.&#xa;Collected money includes delivery fees and must not be added to item sales (the same money is represented twice).&#xa;OrderDateKey groups payments by order date. For actual payment dates, use PaidAt in Europe/Sofia.&#xa;&#xa;SHARED MODEL / 3 FACT TABLES + 7 DISTINCT DIMENSIONS&#xa;Repeated dimensions across pages are the same physical tables; attributes use Type 1 updates (no SCD history).&#xa;OrderDateKey -&gt; DimDate.DateKey; all other FK names match the dimension PK names. All FK columns are NOT NULL.&#xa;DateKey = YYYYMMDD from the order timestamp in Europe/Sofia. Other dimension keys are warehouse surrogate keys.&#xa;[0..1] = nullable attribute; all unmarked columns are NOT NULL. PK = primary key; UQ = unique; FK = foreign key.&#xa;Load scope: orders.notes LIKE SAMPLE-2026-%, including related payments/deliveries. Exclude the demo order.&#xa;Never join raw fact tables by OrderID for aggregation: aggregate each fact to the desired level first." style="rounded=1;html=0;whiteSpace=wrap;align=left;verticalAlign=top;spacing=16;fontSize=16;fontColor=#163c35;fillColor=#f0f6f4;strokeColor=#b9d6d0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1000" width="1480" height="405" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dw-3" name="3 - FactDeliveries">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1450" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="GLOVO / DATA WAREHOUSE / 03" style="text;html=0;align=left;verticalAlign=top;fontSize=30;fontColor=#183c38;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="30" width="1450" height="50" />
+        </mxCell>
+        <mxCell id="subtitle" value="FactDeliveries | UML database notation | PostgreSQL | schema: dw" style="text;html=0;align=left;verticalAlign=top;fontSize=19;fontColor=#183c38;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="85" width="1450" height="35" />
+        </mxCell>
+        <mxCell id="DimDate" value="«table»&#xa;DimDate" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="160" width="380" height="298" />
+        </mxCell>
+        <mxCell id="DimDate_0" value="DateKey : integer {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="64" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_1" value="FullDate : date {UQ}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="90" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_2" value="Year : smallint" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="116" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_3" value="Quarter : smallint" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="142" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_4" value="Month : smallint" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="168" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_5" value="MonthName : varchar(20)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="194" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_6" value="DayOfMonth : smallint" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="220" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_7" value="DayOfWeekISO : smallint" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="246" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimDate_8" value="IsWeekend : boolean" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimDate">
+          <mxGeometry as="geometry" x="0" y="272" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer" value="«table»&#xa;DimCustomer" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="610" y="160" width="380" height="220" />
+        </mxCell>
+        <mxCell id="DimCustomer_0" value="CustomerKey : integer {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="64" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer_1" value="CustomerID : bigint {UQ, source}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="90" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer_2" value="FirstName : varchar(80)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="116" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer_3" value="LastName : varchar(80)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="142" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer_4" value="RegisteredAt : timestamptz" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="168" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCustomer_5" value="IsActive : boolean" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCustomer">
+          <mxGeometry as="geometry" x="0" y="194" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimRestaurant" value="«table»&#xa;DimRestaurant" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1160" y="160" width="380" height="194" />
+        </mxCell>
+        <mxCell id="DimRestaurant_0" value="RestaurantKey : integer {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimRestaurant">
+          <mxGeometry as="geometry" x="0" y="64" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimRestaurant_1" value="RestaurantID : bigint {UQ, source}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimRestaurant">
+          <mxGeometry as="geometry" x="0" y="90" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimRestaurant_2" value="Name : varchar(150)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimRestaurant">
+          <mxGeometry as="geometry" x="0" y="116" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimRestaurant_3" value="StreetAddress : text" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimRestaurant">
+          <mxGeometry as="geometry" x="0" y="142" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimRestaurant_4" value="IsActive : boolean" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimRestaurant">
+          <mxGeometry as="geometry" x="0" y="168" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimLocation" value="«table»&#xa;DimLocation" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="720" width="380" height="194" />
+        </mxCell>
+        <mxCell id="DimLocation_0" value="LocationKey : integer {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimLocation">
+          <mxGeometry as="geometry" x="0" y="64" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimLocation_1" value="AddressID : bigint {UQ, source}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimLocation">
+          <mxGeometry as="geometry" x="0" y="90" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimLocation_2" value="City : varchar(100)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimLocation">
+          <mxGeometry as="geometry" x="0" y="116" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimLocation_3" value="District : varchar(100) [0..1]" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimLocation">
+          <mxGeometry as="geometry" x="0" y="142" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimLocation_4" value="PostalCode : varchar(20) [0..1]" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimLocation">
+          <mxGeometry as="geometry" x="0" y="168" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCourier" value="«table»&#xa;DimCourier" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#d9efea;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1160" y="720" width="380" height="194" />
+        </mxCell>
+        <mxCell id="DimCourier_0" value="CourierKey : integer {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCourier">
+          <mxGeometry as="geometry" x="0" y="64" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCourier_1" value="CourierID : bigint {UQ, source} [0..1]" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCourier">
+          <mxGeometry as="geometry" x="0" y="90" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCourier_2" value="FirstName : varchar(80)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCourier">
+          <mxGeometry as="geometry" x="0" y="116" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCourier_3" value="LastName : varchar(80)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCourier">
+          <mxGeometry as="geometry" x="0" y="142" width="380" height="26" />
+        </mxCell>
+        <mxCell id="DimCourier_4" value="VehicleType : varchar(30)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="DimCourier">
+          <mxGeometry as="geometry" x="0" y="168" width="380" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries" value="«table»&#xa;FactDeliveries" style="swimlane;html=0;startSize=64;horizontal=1;collapsible=0;fillColor=#ffe6a7;swimlaneFillColor=#ffffff;strokeColor=#49766e;fontColor=#163c35;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="600" y="460" width="400" height="480" />
+        </mxCell>
+        <mxCell id="FactDeliveries_0" value="DeliveryFactKey : bigint {PK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="64" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_1" value="DeliveryID : bigint {UQ, source}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="90" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_2" value="OrderID : bigint {UQ, source}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="116" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_3" value="OrderDateKey : integer {FK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="142" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_4" value="CustomerKey : integer {FK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="168" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_5" value="RestaurantKey : integer {FK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="194" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_6" value="LocationKey : integer {FK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="220" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_7" value="CourierKey : integer {FK}" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="246" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_8" value="DeliveryStatus : varchar(30)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="272" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_9" value="OrderedAt : timestamptz" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="298" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_10" value="AssignedAt : timestamptz [0..1]" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="324" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_11" value="PickedUpAt : timestamptz [0..1]" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="350" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_12" value="DeliveredAt : timestamptz [0..1]" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="376" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_13" value="EstimatedMinutes : integer [0..1]" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="402" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_14" value="DeliveryMinutes : numeric(10,2) [0..1]" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="428" width="400" height="26" />
+        </mxCell>
+        <mxCell id="FactDeliveries_15" value="DeliveryFee : numeric(12,2)" style="text;html=0;align=left;spacingLeft=10;fontSize=14;fontColor=#163c35;" vertex="1" parent="FactDeliveries">
+          <mxGeometry as="geometry" x="0" y="454" width="400" height="26" />
+        </mxCell>
+        <mxCell id="edge0" edge="1" parent="1" source="DimDate" target="FactDeliveries" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=1;exitY=0.75;entryX=0;entryY=0.12;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="480" y="383" />
+              <mxPoint x="480" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge0a" value="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="448" y="355.5" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge0b" value="0..*" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="552" y="489.6" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="DimCustomer" target="FactDeliveries" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge1a" value="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="812.0" y="388" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge1b" value="0..*" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="812.0" y="430" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="DimRestaurant" target="FactDeliveries" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=0;exitY=0.75;entryX=1;entryY=0.12;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1090" y="305" />
+              <mxPoint x="1090" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2a" value="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1112" y="277.5" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge2b" value="0..*" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1008" y="489.6" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="DimLocation" target="FactDeliveries" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=1;exitY=0.4;entryX=0;entryY=0.7;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="490" y="798" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3a" value="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="448" y="769.6" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge3b" value="0..*" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="552" y="768.0" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="DimCourier" target="FactDeliveries" style="edgeStyle=orthogonalEdgeStyle;html=0;startArrow=none;endArrow=none;strokeColor=#49766e;strokeWidth=2;exitX=0;exitY=0.4;entryX=1;entryY=0.7;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1100" y="798" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4a" value="1" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1112" y="769.6" width="40" height="24" />
+        </mxCell>
+        <mxCell id="edge4b" value="0..*" style="text;html=0;align=center;verticalAlign=middle;fontSize=16;fontColor=#163c35;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1008" y="768.0" width="40" height="24" />
+        </mxCell>
+        <mxCell id="notes" value="Grain: one row per delivery; UNIQUE(DeliveryID) and UNIQUE(OrderID).&#xa;DeliveryMinutes = (DeliveredAt - OrderedAt) in minutes; NULL until the delivery is completed.&#xa;Use AVG(DeliveryMinutes) filtered to DeliveryStatus = delivered. Do not sum durations or averages.&#xa;DeliveryFee occurs once per order with a delivery; filter completed deliveries when reporting earned fees.&#xa;CourierKey = 0 refers to a reserved Unknown / Unassigned row in DimCourier. Update the fact when assigned.&#xa;&#xa;SHARED MODEL / 3 FACT TABLES + 7 DISTINCT DIMENSIONS&#xa;Repeated dimensions across pages are the same physical tables; attributes use Type 1 updates (no SCD history).&#xa;OrderDateKey -&gt; DimDate.DateKey; all other FK names match the dimension PK names. All FK columns are NOT NULL.&#xa;DateKey = YYYYMMDD from the order timestamp in Europe/Sofia. Other dimension keys are warehouse surrogate keys.&#xa;[0..1] = nullable attribute; all unmarked columns are NOT NULL. PK = primary key; UQ = unique; FK = foreign key.&#xa;Load scope: orders.notes LIKE SAMPLE-2026-%, including related payments/deliveries. Exclude the demo order.&#xa;Never join raw fact tables by OrderID for aggregation: aggregate each fact to the desired level first." style="rounded=1;html=0;whiteSpace=wrap;align=left;verticalAlign=top;spacing=16;fontSize=16;fontColor=#163c35;fillColor=#f0f6f4;strokeColor=#b9d6d0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1000" width="1480" height="405" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
