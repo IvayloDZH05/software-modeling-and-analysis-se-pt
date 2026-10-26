@@ -1,0 +1,181 @@
+order_id,order_date,order_month,order_year,order_month_number,order_month_name,order_status,customer_id,restaurant_id,restaurant_name,city,district,delivery_status,courier_id,courier_name,item_line_count,total_quantity,ordered_food_value_eur,completed_food_sales_eur,completed_delivery_fees_eur,completed_order_value_eur,collected_payments_eur,successful_payment_count,failed_payment_count,pending_payment_count,delivered_order_count,cancelled_order_count,delivery_minutes,estimated_minutes
+4,2026-01-01,2026-01-01,2026,1,January,delivered,3,3,Sample Restaurant 2,Plovdiv,Central,delivered,2,SampleCourier 1,2,4,38.50,38.50,2.00,40.50,40.50,1,0,0,1,0,26.00,31
+5,2026-01-02,2026-01-01,2026,1,January,delivered,4,4,Sample Restaurant 3,Plovdiv,Trakia,delivered,3,SampleCourier 2,2,4,45.25,45.25,2.50,47.75,47.75,1,0,0,1,0,27.00,32
+6,2026-01-03,2026-01-01,2026,1,January,delivered,5,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,4,SampleCourier 3,2,3,31.50,31.50,3.00,34.50,34.50,1,0,0,1,0,28.00,33
+7,2026-01-04,2026-01-01,2026,1,January,delivered,6,6,Sample Restaurant 5,Plovdiv,Central,delivered,5,SampleCourier 4,2,3,31.25,31.25,1.50,32.75,32.75,1,0,0,1,0,29.00,34
+8,2026-01-05,2026-01-01,2026,1,January,delivered,7,7,Sample Restaurant 6,Plovdiv,Trakia,delivered,6,SampleCourier 5,2,5,62.50,62.50,2.00,64.50,64.50,1,0,0,1,0,30.00,35
+9,2026-01-06,2026-01-01,2026,1,January,delivered,8,2,Sample Restaurant 1,Plovdiv,Karshiyaka,delivered,7,SampleCourier 6,2,2,20.25,20.25,2.50,22.75,22.75,1,0,0,1,0,31.00,36
+10,2026-01-07,2026-01-01,2026,1,January,delivered,9,3,Sample Restaurant 2,Plovdiv,Central,delivered,8,SampleCourier 7,2,4,38.50,38.50,3.00,41.50,41.50,1,0,0,1,0,32.00,37
+11,2026-01-08,2026-01-01,2026,1,January,delivered,10,4,Sample Restaurant 3,Plovdiv,Trakia,delivered,9,SampleCourier 8,2,4,35.25,35.25,1.50,36.75,36.75,1,0,0,1,0,33.00,38
+12,2026-01-09,2026-01-01,2026,1,January,delivered,11,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,2,SampleCourier 1,2,3,34.00,34.00,2.00,36.00,36.00,1,0,0,1,0,34.00,39
+13,2026-01-10,2026-01-01,2026,1,January,cancelled,12,6,Sample Restaurant 5,Plovdiv,Central,no_delivery,unassigned,Unassigned,2,3,38.75,0,0,0,0,0,0,0,0,1,,
+14,2026-01-11,2026-01-01,2026,1,January,delivered,13,2,Sample Restaurant 1,Plovdiv,Trakia,delivered,4,SampleCourier 3,2,5,46.25,46.25,3.00,49.25,49.25,1,0,0,1,0,36.00,41
+15,2026-01-12,2026-01-01,2026,1,January,delivered,14,3,Sample Restaurant 2,Plovdiv,Karshiyaka,delivered,5,SampleCourier 4,2,2,16.75,16.75,1.50,18.25,18.25,1,0,0,1,0,37.00,42
+16,2026-01-13,2026-01-01,2026,1,January,delivered,15,4,Sample Restaurant 3,Plovdiv,Central,delivered,6,SampleCourier 5,2,4,41.50,41.50,2.00,43.50,43.50,1,0,0,1,0,38.00,43
+17,2026-01-14,2026-01-01,2026,1,January,delivered,16,5,Sample Restaurant 4,Plovdiv,Trakia,delivered,7,SampleCourier 6,2,4,48.25,48.25,2.50,50.75,50.75,1,1,0,1,0,39.00,44
+18,2026-01-15,2026-01-01,2026,1,January,delivered,17,6,Sample Restaurant 5,Plovdiv,Karshiyaka,delivered,8,SampleCourier 7,2,3,33.75,33.75,3.00,36.75,36.75,1,0,0,1,0,40.00,30
+19,2026-01-16,2026-01-01,2026,1,January,delivered,18,7,Sample Restaurant 6,Plovdiv,Central,delivered,9,SampleCourier 8,2,3,33.50,33.50,1.50,35.00,35.00,1,0,0,1,0,41.00,31
+20,2026-01-17,2026-01-01,2026,1,January,delivered,19,2,Sample Restaurant 1,Plovdiv,Trakia,delivered,2,SampleCourier 1,2,5,43.75,43.75,2.00,45.75,45.75,1,0,0,1,0,42.00,32
+21,2026-01-18,2026-01-01,2026,1,January,delivered,20,3,Sample Restaurant 2,Plovdiv,Karshiyaka,delivered,3,SampleCourier 2,2,2,21.75,21.75,2.50,24.25,24.25,1,0,0,1,0,43.00,33
+22,2026-01-19,2026-01-01,2026,1,January,delivered,21,4,Sample Restaurant 3,Plovdiv,Central,delivered,4,SampleCourier 3,2,4,41.50,41.50,3.00,44.50,44.50,1,0,0,1,0,44.00,34
+23,2026-01-20,2026-01-01,2026,1,January,cancelled,22,5,Sample Restaurant 4,Plovdiv,Trakia,no_delivery,unassigned,Unassigned,2,4,38.25,0,0,0,0,0,0,0,0,1,,
+24,2026-01-21,2026-01-01,2026,1,January,delivered,23,6,Sample Restaurant 5,Plovdiv,Karshiyaka,delivered,6,SampleCourier 5,2,3,36.25,36.25,2.00,38.25,38.25,1,1,0,1,0,46.00,36
+25,2026-01-22,2026-01-01,2026,1,January,delivered,24,2,Sample Restaurant 1,Plovdiv,Central,delivered,7,SampleCourier 6,2,3,29.75,29.75,2.50,32.25,32.25,1,0,0,1,0,47.00,37
+26,2026-01-23,2026-01-01,2026,1,January,delivered,25,3,Sample Restaurant 2,Plovdiv,Trakia,delivered,8,SampleCourier 7,2,5,50.00,50.00,3.00,53.00,53.00,1,0,0,1,0,48.00,38
+27,2026-01-24,2026-01-01,2026,1,January,delivered,26,4,Sample Restaurant 3,Plovdiv,Karshiyaka,delivered,9,SampleCourier 8,2,2,18.25,18.25,1.50,19.75,19.75,1,0,0,1,0,49.00,39
+28,2026-01-25,2026-01-01,2026,1,January,delivered,27,5,Sample Restaurant 4,Plovdiv,Central,delivered,2,SampleCourier 1,2,4,44.50,44.50,2.00,46.50,46.50,1,0,0,1,0,50.00,40
+29,2026-01-26,2026-01-01,2026,1,January,delivered,28,6,Sample Restaurant 5,Plovdiv,Trakia,delivered,3,SampleCourier 2,2,4,51.25,51.25,2.50,53.75,53.75,1,0,0,1,0,51.00,41
+30,2026-01-27,2026-01-01,2026,1,January,delivered,29,7,Sample Restaurant 6,Plovdiv,Karshiyaka,delivered,4,SampleCourier 3,2,3,36.00,36.00,3.00,39.00,39.00,1,0,0,1,0,52.00,42
+31,2026-01-28,2026-01-01,2026,1,January,delivered,30,2,Sample Restaurant 1,Plovdiv,Central,delivered,5,SampleCourier 4,2,3,22.25,22.25,1.50,23.75,23.75,1,0,0,1,0,53.00,43
+32,2026-01-01,2026-01-01,2026,1,January,delivered,31,3,Sample Restaurant 2,Plovdiv,Trakia,delivered,6,SampleCourier 5,2,5,47.50,47.50,2.00,49.50,49.50,1,0,0,1,0,54.00,44
+33,2026-01-02,2026-01-01,2026,1,January,cancelled,32,4,Sample Restaurant 3,Plovdiv,Karshiyaka,no_delivery,unassigned,Unassigned,2,2,23.25,0,0,0,0,0,0,0,0,1,,
+34,2026-02-03,2026-02-01,2026,2,February,delivered,33,5,Sample Restaurant 4,Plovdiv,Central,delivered,8,SampleCourier 7,2,4,44.50,44.50,3.00,47.50,47.50,1,0,0,1,0,25.00,31
+35,2026-02-04,2026-02-01,2026,2,February,delivered,34,6,Sample Restaurant 5,Plovdiv,Trakia,delivered,9,SampleCourier 8,2,4,41.25,41.25,1.50,42.75,42.75,1,0,0,1,0,26.00,32
+36,2026-02-05,2026-02-01,2026,2,February,delivered,35,2,Sample Restaurant 1,Plovdiv,Karshiyaka,delivered,2,SampleCourier 1,2,3,27.25,27.25,2.00,29.25,29.25,1,0,0,1,0,27.00,33
+37,2026-02-06,2026-02-01,2026,2,February,delivered,36,3,Sample Restaurant 2,Plovdiv,Central,delivered,3,SampleCourier 2,2,3,32.00,32.00,2.50,34.50,34.50,1,0,0,1,0,28.00,34
+38,2026-02-07,2026-02-01,2026,2,February,delivered,37,4,Sample Restaurant 3,Plovdiv,Trakia,delivered,4,SampleCourier 3,2,5,53.75,53.75,3.00,56.75,56.75,1,1,0,1,0,29.00,35
+39,2026-02-08,2026-02-01,2026,2,February,delivered,38,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,5,SampleCourier 4,2,2,19.75,19.75,1.50,21.25,21.25,1,0,0,1,0,30.00,36
+40,2026-02-09,2026-02-01,2026,2,February,delivered,39,6,Sample Restaurant 5,Plovdiv,Central,delivered,6,SampleCourier 5,2,4,47.50,47.50,2.00,49.50,49.50,1,0,0,1,0,31.00,37
+41,2026-02-10,2026-02-01,2026,2,February,delivered,40,7,Sample Restaurant 6,Plovdiv,Trakia,delivered,7,SampleCourier 6,2,4,54.25,54.25,2.50,56.75,56.75,1,0,0,1,0,32.00,38
+42,2026-02-11,2026-02-01,2026,2,February,delivered,41,2,Sample Restaurant 1,Plovdiv,Karshiyaka,delivered,8,SampleCourier 7,2,3,24.75,24.75,3.00,27.75,27.75,1,0,0,1,0,33.00,39
+43,2026-02-12,2026-02-01,2026,2,February,cancelled,42,3,Sample Restaurant 2,Plovdiv,Central,no_delivery,unassigned,Unassigned,2,3,24.50,0,0,0,0,0,0,0,0,1,,
+44,2026-02-13,2026-02-01,2026,2,February,delivered,43,4,Sample Restaurant 3,Plovdiv,Trakia,delivered,2,SampleCourier 1,2,5,51.25,51.25,2.00,53.25,53.25,1,0,0,1,0,35.00,41
+45,2026-02-14,2026-02-01,2026,2,February,delivered,44,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,3,SampleCourier 2,2,2,24.75,24.75,2.50,27.25,27.25,1,1,0,1,0,36.00,42
+46,2026-02-15,2026-02-01,2026,2,February,delivered,45,6,Sample Restaurant 5,Plovdiv,Central,delivered,4,SampleCourier 3,2,4,47.50,47.50,3.00,50.50,50.50,1,0,0,1,0,37.00,43
+47,2026-02-16,2026-02-01,2026,2,February,delivered,46,2,Sample Restaurant 1,Plovdiv,Trakia,delivered,5,SampleCourier 4,2,4,29.25,29.25,1.50,30.75,30.75,1,0,0,1,0,38.00,44
+48,2026-02-17,2026-02-01,2026,2,February,delivered,47,3,Sample Restaurant 2,Plovdiv,Karshiyaka,delivered,6,SampleCourier 5,2,3,29.50,29.50,2.00,31.50,31.50,1,0,0,1,0,39.00,30
+49,2026-02-18,2026-02-01,2026,2,February,delivered,48,4,Sample Restaurant 3,Plovdiv,Central,delivered,7,SampleCourier 6,2,3,34.25,34.25,2.50,36.75,36.75,1,0,0,1,0,40.00,31
+50,2026-02-19,2026-02-01,2026,2,February,delivered,49,5,Sample Restaurant 4,Plovdiv,Trakia,delivered,8,SampleCourier 7,2,5,57.50,57.50,3.00,60.50,60.50,1,0,0,1,0,41.00,32
+51,2026-02-20,2026-02-01,2026,2,February,delivered,50,6,Sample Restaurant 5,Plovdiv,Karshiyaka,delivered,9,SampleCourier 8,2,2,21.25,21.25,1.50,22.75,22.75,1,0,0,1,0,42.00,33
+52,2026-02-21,2026-02-01,2026,2,February,delivered,51,7,Sample Restaurant 6,Plovdiv,Central,delivered,2,SampleCourier 1,2,4,50.50,50.50,2.00,52.50,52.50,1,1,0,1,0,43.00,34
+53,2026-02-22,2026-02-01,2026,2,February,cancelled,52,2,Sample Restaurant 1,Plovdiv,Trakia,no_delivery,unassigned,Unassigned,2,4,39.25,0,0,0,0,0,0,0,0,1,,
+54,2026-02-23,2026-02-01,2026,2,February,delivered,53,3,Sample Restaurant 2,Plovdiv,Karshiyaka,delivered,4,SampleCourier 3,2,3,27.00,27.00,3.00,30.00,30.00,1,0,0,1,0,45.00,36
+55,2026-02-24,2026-02-01,2026,2,February,delivered,54,4,Sample Restaurant 3,Plovdiv,Central,delivered,5,SampleCourier 4,2,3,26.75,26.75,1.50,28.25,28.25,1,0,0,1,0,46.00,37
+56,2026-02-25,2026-02-01,2026,2,February,delivered,55,5,Sample Restaurant 4,Plovdiv,Trakia,delivered,6,SampleCourier 5,2,5,55.00,55.00,2.00,57.00,57.00,1,0,0,1,0,47.00,38
+57,2026-02-26,2026-02-01,2026,2,February,delivered,56,6,Sample Restaurant 5,Plovdiv,Karshiyaka,delivered,7,SampleCourier 6,2,2,26.25,26.25,2.50,28.75,28.75,1,0,0,1,0,48.00,39
+58,2026-02-27,2026-02-01,2026,2,February,delivered,57,2,Sample Restaurant 1,Plovdiv,Central,delivered,8,SampleCourier 7,2,4,35.50,35.50,3.00,38.50,38.50,1,0,0,1,0,49.00,40
+59,2026-02-28,2026-02-01,2026,2,February,delivered,58,3,Sample Restaurant 2,Plovdiv,Trakia,delivered,9,SampleCourier 8,2,4,32.25,32.25,1.50,33.75,33.75,1,0,0,1,0,50.00,41
+60,2026-02-01,2026-02-01,2026,2,February,delivered,59,4,Sample Restaurant 3,Plovdiv,Karshiyaka,delivered,2,SampleCourier 1,2,3,31.75,31.75,2.00,33.75,33.75,1,0,0,1,0,51.00,42
+61,2026-02-02,2026-02-01,2026,2,February,delivered,60,5,Sample Restaurant 4,Plovdiv,Central,delivered,3,SampleCourier 2,2,3,36.50,36.50,2.50,39.00,39.00,1,0,0,1,0,52.00,43
+62,2026-02-03,2026-02-01,2026,2,February,delivered,61,6,Sample Restaurant 5,Plovdiv,Trakia,delivered,4,SampleCourier 3,2,5,61.25,61.25,3.00,64.25,64.25,1,0,0,1,0,53.00,44
+63,2026-02-04,2026-02-01,2026,2,February,cancelled,62,7,Sample Restaurant 6,Plovdiv,Karshiyaka,no_delivery,unassigned,Unassigned,2,2,22.75,0,0,0,0,0,0,0,0,1,,
+64,2026-03-05,2026-03-01,2026,3,March,delivered,3,2,Sample Restaurant 1,Plovdiv,Central,delivered,6,SampleCourier 5,2,4,35.50,35.50,2.00,37.50,37.50,1,0,0,1,0,55.00,31
+65,2026-03-06,2026-03-01,2026,3,March,delivered,4,3,Sample Restaurant 2,Plovdiv,Trakia,delivered,7,SampleCourier 6,2,4,42.25,42.25,2.50,44.75,44.75,1,0,0,1,0,25.00,32
+66,2026-03-07,2026-03-01,2026,3,March,delivered,5,4,Sample Restaurant 3,Plovdiv,Karshiyaka,delivered,8,SampleCourier 7,2,3,29.25,29.25,3.00,32.25,32.25,1,1,0,1,0,26.00,33
+67,2026-03-08,2026-03-01,2026,3,March,delivered,6,5,Sample Restaurant 4,Plovdiv,Central,delivered,9,SampleCourier 8,2,3,29.00,29.00,1.50,30.50,30.50,1,0,0,1,0,27.00,34
+68,2026-03-09,2026-03-01,2026,3,March,delivered,7,6,Sample Restaurant 5,Plovdiv,Trakia,delivered,2,SampleCourier 1,2,5,58.75,58.75,2.00,60.75,60.75,1,0,0,1,0,28.00,35
+69,2026-03-10,2026-03-01,2026,3,March,delivered,8,2,Sample Restaurant 1,Plovdiv,Karshiyaka,delivered,3,SampleCourier 2,2,2,20.25,20.25,2.50,22.75,22.75,1,0,0,1,0,29.00,36
+70,2026-03-11,2026-03-01,2026,3,March,delivered,9,3,Sample Restaurant 2,Plovdiv,Central,delivered,4,SampleCourier 3,2,4,38.50,38.50,3.00,41.50,41.50,1,0,0,1,0,30.00,37
+71,2026-03-12,2026-03-01,2026,3,March,delivered,10,4,Sample Restaurant 3,Plovdiv,Trakia,delivered,5,SampleCourier 4,2,4,35.25,35.25,1.50,36.75,36.75,1,0,0,1,0,31.00,38
+72,2026-03-13,2026-03-01,2026,3,March,delivered,11,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,6,SampleCourier 5,2,3,34.00,34.00,2.00,36.00,36.00,1,0,0,1,0,32.00,39
+73,2026-03-14,2026-03-01,2026,3,March,cancelled,12,6,Sample Restaurant 5,Plovdiv,Central,no_delivery,unassigned,Unassigned,2,3,38.75,0,0,0,0,0,0,0,0,1,,
+74,2026-03-15,2026-03-01,2026,3,March,delivered,13,7,Sample Restaurant 6,Plovdiv,Trakia,delivered,8,SampleCourier 7,2,5,65.00,65.00,3.00,68.00,68.00,1,0,0,1,0,34.00,41
+75,2026-03-16,2026-03-01,2026,3,March,delivered,14,2,Sample Restaurant 1,Plovdiv,Karshiyaka,delivered,9,SampleCourier 8,2,2,15.25,15.25,1.50,16.75,16.75,1,0,0,1,0,35.00,42
+76,2026-03-17,2026-03-01,2026,3,March,delivered,15,3,Sample Restaurant 2,Plovdiv,Central,delivered,2,SampleCourier 1,2,4,38.50,38.50,2.00,40.50,40.50,1,0,0,1,0,36.00,43
+77,2026-03-18,2026-03-01,2026,3,March,delivered,16,4,Sample Restaurant 3,Plovdiv,Trakia,delivered,3,SampleCourier 2,2,4,45.25,45.25,2.50,47.75,47.75,1,0,0,1,0,37.00,44
+78,2026-03-19,2026-03-01,2026,3,March,delivered,17,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,4,SampleCourier 3,2,3,31.50,31.50,3.00,34.50,34.50,1,0,0,1,0,38.00,30
+79,2026-03-20,2026-03-01,2026,3,March,delivered,18,6,Sample Restaurant 5,Plovdiv,Central,delivered,5,SampleCourier 4,2,3,31.25,31.25,1.50,32.75,32.75,1,0,0,1,0,39.00,31
+80,2026-03-21,2026-03-01,2026,3,March,delivered,19,2,Sample Restaurant 1,Plovdiv,Trakia,delivered,6,SampleCourier 5,2,5,43.75,43.75,2.00,45.75,45.75,1,0,0,1,0,40.00,32
+81,2026-03-22,2026-03-01,2026,3,March,delivered,20,3,Sample Restaurant 2,Plovdiv,Karshiyaka,delivered,7,SampleCourier 6,2,2,21.75,21.75,2.50,24.25,24.25,1,0,0,1,0,41.00,33
+82,2026-03-23,2026-03-01,2026,3,March,delivered,21,4,Sample Restaurant 3,Plovdiv,Central,delivered,8,SampleCourier 7,2,4,41.50,41.50,3.00,44.50,44.50,1,0,0,1,0,42.00,34
+83,2026-03-24,2026-03-01,2026,3,March,cancelled,22,5,Sample Restaurant 4,Plovdiv,Trakia,no_delivery,unassigned,Unassigned,2,4,38.25,0,0,0,0,0,0,0,0,1,,
+84,2026-03-25,2026-03-01,2026,3,March,delivered,23,6,Sample Restaurant 5,Plovdiv,Karshiyaka,delivered,2,SampleCourier 1,2,3,36.25,36.25,2.00,38.25,38.25,1,0,0,1,0,44.00,36
+85,2026-03-26,2026-03-01,2026,3,March,delivered,24,7,Sample Restaurant 6,Plovdiv,Central,delivered,3,SampleCourier 2,2,3,41.00,41.00,2.50,43.50,43.50,1,0,0,1,0,45.00,37
+86,2026-03-27,2026-03-01,2026,3,March,delivered,25,2,Sample Restaurant 1,Plovdiv,Trakia,delivered,4,SampleCourier 3,2,5,46.25,46.25,3.00,49.25,49.25,1,0,0,1,0,46.00,38
+87,2026-03-28,2026-03-01,2026,3,March,delivered,26,3,Sample Restaurant 2,Plovdiv,Karshiyaka,delivered,5,SampleCourier 4,2,2,16.75,16.75,1.50,18.25,18.25,1,1,0,1,0,47.00,39
+88,2026-03-01,2026-03-01,2026,3,March,delivered,27,4,Sample Restaurant 3,Plovdiv,Central,delivered,6,SampleCourier 5,2,4,41.50,41.50,2.00,43.50,43.50,1,0,0,1,0,48.00,40
+89,2026-03-02,2026-03-01,2026,3,March,delivered,28,5,Sample Restaurant 4,Plovdiv,Trakia,delivered,7,SampleCourier 6,2,4,48.25,48.25,2.50,50.75,50.75,1,0,0,1,0,49.00,41
+90,2026-03-03,2026-03-01,2026,3,March,delivered,29,6,Sample Restaurant 5,Plovdiv,Karshiyaka,delivered,8,SampleCourier 7,2,3,33.75,33.75,3.00,36.75,36.75,1,0,0,1,0,50.00,42
+91,2026-03-04,2026-03-01,2026,3,March,delivered,30,2,Sample Restaurant 1,Plovdiv,Central,delivered,9,SampleCourier 8,2,3,22.25,22.25,1.50,23.75,23.75,1,0,0,1,0,51.00,43
+92,2026-03-05,2026-03-01,2026,3,March,delivered,31,3,Sample Restaurant 2,Plovdiv,Trakia,delivered,2,SampleCourier 1,2,5,47.50,47.50,2.00,49.50,49.50,1,0,0,1,0,52.00,44
+93,2026-03-06,2026-03-01,2026,3,March,cancelled,32,4,Sample Restaurant 3,Plovdiv,Karshiyaka,no_delivery,unassigned,Unassigned,2,2,23.25,0,0,0,0,0,0,0,0,1,,
+94,2026-04-07,2026-04-01,2026,4,April,delivered,33,5,Sample Restaurant 4,Plovdiv,Central,delivered,4,SampleCourier 3,2,4,44.50,44.50,3.00,47.50,47.50,1,1,0,1,0,54.00,31
+95,2026-04-08,2026-04-01,2026,4,April,delivered,34,6,Sample Restaurant 5,Plovdiv,Trakia,delivered,5,SampleCourier 4,2,4,41.25,41.25,1.50,42.75,42.75,1,0,0,1,0,55.00,32
+96,2026-04-09,2026-04-01,2026,4,April,delivered,35,7,Sample Restaurant 6,Plovdiv,Karshiyaka,delivered,6,SampleCourier 5,2,3,38.50,38.50,2.00,40.50,40.50,1,0,0,1,0,25.00,33
+97,2026-04-10,2026-04-01,2026,4,April,delivered,36,2,Sample Restaurant 1,Plovdiv,Central,delivered,7,SampleCourier 6,2,3,29.75,29.75,2.50,32.25,32.25,1,0,0,1,0,26.00,34
+98,2026-04-11,2026-04-01,2026,4,April,delivered,37,3,Sample Restaurant 2,Plovdiv,Trakia,delivered,8,SampleCourier 7,2,5,50.00,50.00,3.00,53.00,53.00,1,0,0,1,0,27.00,35
+99,2026-04-12,2026-04-01,2026,4,April,delivered,38,4,Sample Restaurant 3,Plovdiv,Karshiyaka,delivered,9,SampleCourier 8,2,2,18.25,18.25,1.50,19.75,19.75,1,0,0,1,0,28.00,36
+100,2026-04-13,2026-04-01,2026,4,April,delivered,39,5,Sample Restaurant 4,Plovdiv,Central,delivered,2,SampleCourier 1,2,4,44.50,44.50,2.00,46.50,46.50,1,0,0,1,0,29.00,37
+101,2026-04-14,2026-04-01,2026,4,April,delivered,40,6,Sample Restaurant 5,Plovdiv,Trakia,delivered,3,SampleCourier 2,2,4,51.25,51.25,2.50,53.75,53.75,1,0,0,1,0,30.00,38
+102,2026-04-15,2026-04-01,2026,4,April,delivered,41,2,Sample Restaurant 1,Plovdiv,Karshiyaka,delivered,4,SampleCourier 3,2,3,24.75,24.75,3.00,27.75,27.75,1,0,0,1,0,31.00,39
+103,2026-04-16,2026-04-01,2026,4,April,cancelled,42,3,Sample Restaurant 2,Plovdiv,Central,no_delivery,unassigned,Unassigned,2,3,24.50,0,0,0,0,0,0,0,0,1,,
+104,2026-04-17,2026-04-01,2026,4,April,delivered,43,4,Sample Restaurant 3,Plovdiv,Trakia,delivered,6,SampleCourier 5,2,5,51.25,51.25,2.00,53.25,53.25,1,0,0,1,0,33.00,41
+105,2026-04-18,2026-04-01,2026,4,April,delivered,44,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,7,SampleCourier 6,2,2,24.75,24.75,2.50,27.25,27.25,1,0,0,1,0,34.00,42
+106,2026-04-19,2026-04-01,2026,4,April,delivered,45,6,Sample Restaurant 5,Plovdiv,Central,delivered,8,SampleCourier 7,2,4,47.50,47.50,3.00,50.50,50.50,1,0,0,1,0,35.00,43
+107,2026-04-20,2026-04-01,2026,4,April,delivered,46,7,Sample Restaurant 6,Plovdiv,Trakia,delivered,9,SampleCourier 8,2,4,44.25,44.25,1.50,45.75,45.75,1,0,0,1,0,36.00,44
+108,2026-04-21,2026-04-01,2026,4,April,delivered,47,2,Sample Restaurant 1,Plovdiv,Karshiyaka,delivered,2,SampleCourier 1,2,3,27.25,27.25,2.00,29.25,29.25,1,1,0,1,0,37.00,30
+109,2026-04-22,2026-04-01,2026,4,April,delivered,48,3,Sample Restaurant 2,Plovdiv,Central,delivered,3,SampleCourier 2,2,3,32.00,32.00,2.50,34.50,34.50,1,0,0,1,0,38.00,31
+110,2026-04-23,2026-04-01,2026,4,April,delivered,49,4,Sample Restaurant 3,Plovdiv,Trakia,delivered,4,SampleCourier 3,2,5,53.75,53.75,3.00,56.75,56.75,1,0,0,1,0,39.00,32
+111,2026-04-24,2026-04-01,2026,4,April,delivered,50,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,5,SampleCourier 4,2,2,19.75,19.75,1.50,21.25,21.25,1,0,0,1,0,40.00,33
+112,2026-04-25,2026-04-01,2026,4,April,delivered,51,6,Sample Restaurant 5,Plovdiv,Central,delivered,6,SampleCourier 5,2,4,47.50,47.50,2.00,49.50,49.50,1,0,0,1,0,41.00,34
+113,2026-04-26,2026-04-01,2026,4,April,cancelled,52,2,Sample Restaurant 1,Plovdiv,Trakia,no_delivery,unassigned,Unassigned,2,4,39.25,0,0,0,0,0,0,0,0,1,,
+114,2026-04-27,2026-04-01,2026,4,April,delivered,53,3,Sample Restaurant 2,Plovdiv,Karshiyaka,delivered,8,SampleCourier 7,2,3,27.00,27.00,3.00,30.00,30.00,1,0,0,1,0,43.00,36
+115,2026-04-28,2026-04-01,2026,4,April,delivered,54,4,Sample Restaurant 3,Plovdiv,Central,delivered,9,SampleCourier 8,2,3,26.75,26.75,1.50,28.25,28.25,1,1,0,1,0,44.00,37
+116,2026-04-01,2026-04-01,2026,4,April,delivered,55,5,Sample Restaurant 4,Plovdiv,Trakia,delivered,2,SampleCourier 1,2,5,55.00,55.00,2.00,57.00,57.00,1,0,0,1,0,45.00,38
+117,2026-04-02,2026-04-01,2026,4,April,delivered,56,6,Sample Restaurant 5,Plovdiv,Karshiyaka,delivered,3,SampleCourier 2,2,2,26.25,26.25,2.50,28.75,28.75,1,0,0,1,0,46.00,39
+118,2026-04-03,2026-04-01,2026,4,April,delivered,57,7,Sample Restaurant 6,Plovdiv,Central,delivered,4,SampleCourier 3,2,4,50.50,50.50,3.00,53.50,53.50,1,0,0,1,0,47.00,40
+119,2026-04-04,2026-04-01,2026,4,April,delivered,58,2,Sample Restaurant 1,Plovdiv,Trakia,delivered,5,SampleCourier 4,2,4,29.25,29.25,1.50,30.75,30.75,1,0,0,1,0,48.00,41
+120,2026-04-05,2026-04-01,2026,4,April,delivered,59,3,Sample Restaurant 2,Plovdiv,Karshiyaka,delivered,6,SampleCourier 5,2,3,29.50,29.50,2.00,31.50,31.50,1,0,0,1,0,49.00,42
+121,2026-04-06,2026-04-01,2026,4,April,delivered,60,4,Sample Restaurant 3,Plovdiv,Central,delivered,7,SampleCourier 6,2,3,34.25,34.25,2.50,36.75,36.75,1,0,0,1,0,50.00,43
+122,2026-04-07,2026-04-01,2026,4,April,delivered,61,5,Sample Restaurant 4,Plovdiv,Trakia,delivered,8,SampleCourier 7,2,5,57.50,57.50,3.00,60.50,60.50,1,1,0,1,0,51.00,44
+123,2026-04-08,2026-04-01,2026,4,April,cancelled,62,6,Sample Restaurant 5,Plovdiv,Karshiyaka,no_delivery,unassigned,Unassigned,2,2,21.25,0,0,0,0,0,0,0,0,1,,
+124,2026-05-09,2026-05-01,2026,5,May,delivered,3,2,Sample Restaurant 1,Plovdiv,Central,delivered,2,SampleCourier 1,2,4,35.50,35.50,2.00,37.50,37.50,1,0,0,1,0,53.00,31
+125,2026-05-10,2026-05-01,2026,5,May,delivered,4,3,Sample Restaurant 2,Plovdiv,Trakia,delivered,3,SampleCourier 2,2,4,42.25,42.25,2.50,44.75,44.75,1,0,0,1,0,54.00,32
+126,2026-05-11,2026-05-01,2026,5,May,delivered,5,4,Sample Restaurant 3,Plovdiv,Karshiyaka,delivered,4,SampleCourier 3,2,3,29.25,29.25,3.00,32.25,32.25,1,0,0,1,0,55.00,33
+127,2026-05-12,2026-05-01,2026,5,May,delivered,6,5,Sample Restaurant 4,Plovdiv,Central,delivered,5,SampleCourier 4,2,3,29.00,29.00,1.50,30.50,30.50,1,0,0,1,0,25.00,34
+128,2026-05-13,2026-05-01,2026,5,May,delivered,7,6,Sample Restaurant 5,Plovdiv,Trakia,delivered,6,SampleCourier 5,2,5,58.75,58.75,2.00,60.75,60.75,1,0,0,1,0,26.00,35
+129,2026-05-14,2026-05-01,2026,5,May,delivered,8,7,Sample Restaurant 6,Plovdiv,Karshiyaka,delivered,7,SampleCourier 6,2,2,27.75,27.75,2.50,30.25,30.25,1,0,0,1,0,27.00,36
+130,2026-05-15,2026-05-01,2026,5,May,delivered,9,2,Sample Restaurant 1,Plovdiv,Central,delivered,8,SampleCourier 7,2,4,35.50,35.50,3.00,38.50,38.50,1,0,0,1,0,28.00,37
+131,2026-05-16,2026-05-01,2026,5,May,delivered,10,3,Sample Restaurant 2,Plovdiv,Trakia,delivered,9,SampleCourier 8,2,4,32.25,32.25,1.50,33.75,33.75,1,0,0,1,0,29.00,38
+132,2026-05-17,2026-05-01,2026,5,May,delivered,11,4,Sample Restaurant 3,Plovdiv,Karshiyaka,delivered,2,SampleCourier 1,2,3,31.75,31.75,2.00,33.75,33.75,1,0,0,1,0,30.00,39
+133,2026-05-18,2026-05-01,2026,5,May,cancelled,12,5,Sample Restaurant 4,Plovdiv,Central,no_delivery,unassigned,Unassigned,2,3,36.50,0,0,0,0,0,0,0,0,1,,
+134,2026-05-19,2026-05-01,2026,5,May,delivered,13,6,Sample Restaurant 5,Plovdiv,Trakia,delivered,4,SampleCourier 3,2,5,61.25,61.25,3.00,64.25,64.25,1,0,0,1,0,32.00,41
+135,2026-05-20,2026-05-01,2026,5,May,delivered,14,2,Sample Restaurant 1,Plovdiv,Karshiyaka,delivered,5,SampleCourier 4,2,2,15.25,15.25,1.50,16.75,16.75,1,0,0,1,0,33.00,42
+136,2026-05-21,2026-05-01,2026,5,May,delivered,15,3,Sample Restaurant 2,Plovdiv,Central,delivered,6,SampleCourier 5,2,4,38.50,38.50,2.00,40.50,40.50,1,1,0,1,0,34.00,43
+137,2026-05-22,2026-05-01,2026,5,May,delivered,16,4,Sample Restaurant 3,Plovdiv,Trakia,delivered,7,SampleCourier 6,2,4,45.25,45.25,2.50,47.75,47.75,1,0,0,1,0,35.00,44
+138,2026-05-23,2026-05-01,2026,5,May,delivered,17,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,8,SampleCourier 7,2,3,31.50,31.50,3.00,34.50,34.50,1,0,0,1,0,36.00,30
+139,2026-05-24,2026-05-01,2026,5,May,delivered,18,6,Sample Restaurant 5,Plovdiv,Central,delivered,9,SampleCourier 8,2,3,31.25,31.25,1.50,32.75,32.75,1,0,0,1,0,37.00,31
+140,2026-05-25,2026-05-01,2026,5,May,delivered,19,7,Sample Restaurant 6,Plovdiv,Trakia,delivered,2,SampleCourier 1,2,5,62.50,62.50,2.00,64.50,64.50,1,0,0,1,0,38.00,32
+141,2026-05-26,2026-05-01,2026,5,May,delivered,20,2,Sample Restaurant 1,Plovdiv,Karshiyaka,delivered,3,SampleCourier 2,2,2,20.25,20.25,2.50,22.75,22.75,1,0,0,1,0,39.00,33
+142,2026-05-27,2026-05-01,2026,5,May,delivered,21,3,Sample Restaurant 2,Plovdiv,Central,delivered,4,SampleCourier 3,2,4,38.50,38.50,3.00,41.50,41.50,1,0,0,1,0,40.00,34
+143,2026-05-28,2026-05-01,2026,5,May,cancelled,22,4,Sample Restaurant 3,Plovdiv,Trakia,no_delivery,unassigned,Unassigned,2,4,35.25,0,0,0,0,0,0,0,0,1,,
+144,2026-05-01,2026-05-01,2026,5,May,delivered,23,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,6,SampleCourier 5,2,3,34.00,34.00,2.00,36.00,36.00,1,0,0,1,0,42.00,36
+145,2026-05-02,2026-05-01,2026,5,May,delivered,24,6,Sample Restaurant 5,Plovdiv,Central,delivered,7,SampleCourier 6,2,3,38.75,38.75,2.50,41.25,41.25,1,0,0,1,0,43.00,37
+146,2026-05-03,2026-05-01,2026,5,May,delivered,25,2,Sample Restaurant 1,Plovdiv,Trakia,delivered,8,SampleCourier 7,2,5,46.25,46.25,3.00,49.25,49.25,1,0,0,1,0,44.00,38
+147,2026-05-04,2026-05-01,2026,5,May,delivered,26,3,Sample Restaurant 2,Plovdiv,Karshiyaka,delivered,9,SampleCourier 8,2,2,16.75,16.75,1.50,18.25,18.25,1,0,0,1,0,45.00,39
+148,2026-05-05,2026-05-01,2026,5,May,delivered,27,4,Sample Restaurant 3,Plovdiv,Central,delivered,2,SampleCourier 1,2,4,41.50,41.50,2.00,43.50,43.50,1,0,0,1,0,46.00,40
+149,2026-05-06,2026-05-01,2026,5,May,delivered,28,5,Sample Restaurant 4,Plovdiv,Trakia,delivered,3,SampleCourier 2,2,4,48.25,48.25,2.50,50.75,50.75,1,0,0,1,0,47.00,41
+150,2026-05-07,2026-05-01,2026,5,May,delivered,29,6,Sample Restaurant 5,Plovdiv,Karshiyaka,delivered,4,SampleCourier 3,2,3,33.75,33.75,3.00,36.75,36.75,1,0,0,1,0,48.00,42
+151,2026-05-08,2026-05-01,2026,5,May,delivered,30,7,Sample Restaurant 6,Plovdiv,Central,delivered,5,SampleCourier 4,2,3,33.50,33.50,1.50,35.00,35.00,1,0,0,1,0,49.00,43
+152,2026-05-09,2026-05-01,2026,5,May,delivered,31,2,Sample Restaurant 1,Plovdiv,Trakia,delivered,6,SampleCourier 5,2,5,43.75,43.75,2.00,45.75,45.75,1,0,0,1,0,50.00,44
+153,2026-05-10,2026-05-01,2026,5,May,cancelled,32,3,Sample Restaurant 2,Plovdiv,Karshiyaka,no_delivery,unassigned,Unassigned,2,2,21.75,0,0,0,0,0,0,0,0,1,,
+154,2026-06-11,2026-06-01,2026,6,June,delivered,33,4,Sample Restaurant 3,Plovdiv,Central,delivered,8,SampleCourier 7,2,4,41.50,41.50,3.00,44.50,44.50,1,0,0,1,0,52.00,31
+155,2026-06-12,2026-06-01,2026,6,June,delivered,34,5,Sample Restaurant 4,Plovdiv,Trakia,delivered,9,SampleCourier 8,2,4,38.25,38.25,1.50,39.75,39.75,1,0,0,1,0,53.00,32
+156,2026-06-13,2026-06-01,2026,6,June,delivered,35,6,Sample Restaurant 5,Plovdiv,Karshiyaka,delivered,2,SampleCourier 1,2,3,36.25,36.25,2.00,38.25,38.25,1,0,0,1,0,54.00,33
+157,2026-06-14,2026-06-01,2026,6,June,delivered,36,2,Sample Restaurant 1,Plovdiv,Central,delivered,3,SampleCourier 2,2,3,29.75,29.75,2.50,32.25,32.25,1,1,0,1,0,55.00,34
+158,2026-06-15,2026-06-01,2026,6,June,delivered,37,3,Sample Restaurant 2,Plovdiv,Trakia,delivered,4,SampleCourier 3,2,5,50.00,50.00,3.00,53.00,53.00,1,0,0,1,0,25.00,35
+159,2026-06-16,2026-06-01,2026,6,June,delivered,38,4,Sample Restaurant 3,Plovdiv,Karshiyaka,delivered,5,SampleCourier 4,2,2,18.25,18.25,1.50,19.75,19.75,1,0,0,1,0,26.00,36
+160,2026-06-17,2026-06-01,2026,6,June,delivered,39,5,Sample Restaurant 4,Plovdiv,Central,delivered,6,SampleCourier 5,2,4,44.50,44.50,2.00,46.50,46.50,1,0,0,1,0,27.00,37
+161,2026-06-18,2026-06-01,2026,6,June,delivered,40,6,Sample Restaurant 5,Plovdiv,Trakia,delivered,7,SampleCourier 6,2,4,51.25,51.25,2.50,53.75,53.75,1,0,0,1,0,28.00,38
+162,2026-06-19,2026-06-01,2026,6,June,delivered,41,7,Sample Restaurant 6,Plovdiv,Karshiyaka,delivered,8,SampleCourier 7,2,3,36.00,36.00,3.00,39.00,39.00,1,0,0,1,0,29.00,39
+163,2026-06-20,2026-06-01,2026,6,June,cancelled,42,2,Sample Restaurant 1,Plovdiv,Central,no_delivery,unassigned,Unassigned,2,3,22.25,0,0,0,0,0,0,0,0,1,,
+164,2026-06-21,2026-06-01,2026,6,June,delivered,43,3,Sample Restaurant 2,Plovdiv,Trakia,delivered,2,SampleCourier 1,2,5,47.50,47.50,2.00,49.50,49.50,1,1,0,1,0,31.00,41
+165,2026-06-22,2026-06-01,2026,6,June,delivered,44,4,Sample Restaurant 3,Plovdiv,Karshiyaka,delivered,3,SampleCourier 2,2,2,23.25,23.25,2.50,25.75,25.75,1,0,0,1,0,32.00,42
+166,2026-06-23,2026-06-01,2026,6,June,delivered,45,5,Sample Restaurant 4,Plovdiv,Central,delivered,4,SampleCourier 3,2,4,44.50,44.50,3.00,47.50,47.50,1,0,0,1,0,33.00,43
+167,2026-06-24,2026-06-01,2026,6,June,delivered,46,6,Sample Restaurant 5,Plovdiv,Trakia,delivered,5,SampleCourier 4,2,4,41.25,41.25,1.50,42.75,42.75,1,0,0,1,0,34.00,44
+168,2026-06-25,2026-06-01,2026,6,June,delivered,47,2,Sample Restaurant 1,Plovdiv,Karshiyaka,delivered,6,SampleCourier 5,2,3,27.25,27.25,2.00,29.25,29.25,1,0,0,1,0,35.00,30
+169,2026-06-26,2026-06-01,2026,6,June,delivered,48,3,Sample Restaurant 2,Plovdiv,Central,delivered,7,SampleCourier 6,2,3,32.00,32.00,2.50,34.50,34.50,1,0,0,1,0,36.00,31
+170,2026-06-27,2026-06-01,2026,6,June,delivered,49,4,Sample Restaurant 3,Plovdiv,Trakia,delivered,8,SampleCourier 7,2,5,53.75,53.75,3.00,56.75,56.75,1,0,0,1,0,37.00,32
+171,2026-06-28,2026-06-01,2026,6,June,delivered,50,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,9,SampleCourier 8,2,2,19.75,19.75,1.50,21.25,21.25,1,0,0,1,0,38.00,33
+172,2026-06-01,2026-06-01,2026,6,June,delivered,51,6,Sample Restaurant 5,Plovdiv,Central,delivered,2,SampleCourier 1,2,4,47.50,47.50,2.00,49.50,49.50,1,0,0,1,0,39.00,34
+173,2026-06-02,2026-06-01,2026,6,June,cancelled,52,7,Sample Restaurant 6,Plovdiv,Trakia,no_delivery,unassigned,Unassigned,2,4,54.25,0,0,0,0,0,0,0,0,1,,
+174,2026-06-03,2026-06-01,2026,6,June,delivered,53,2,Sample Restaurant 1,Plovdiv,Karshiyaka,delivered,4,SampleCourier 3,2,3,24.75,24.75,3.00,27.75,27.75,1,0,0,1,0,41.00,36
+175,2026-06-04,2026-06-01,2026,6,June,delivered,54,3,Sample Restaurant 2,Plovdiv,Central,delivered,5,SampleCourier 4,2,3,24.50,24.50,1.50,26.00,26.00,1,0,0,1,0,42.00,37
+176,2026-06-05,2026-06-01,2026,6,June,delivered,55,4,Sample Restaurant 3,Plovdiv,Trakia,delivered,6,SampleCourier 5,2,5,51.25,51.25,2.00,53.25,53.25,1,0,0,1,0,43.00,38
+177,2026-06-06,2026-06-01,2026,6,June,delivered,56,5,Sample Restaurant 4,Plovdiv,Karshiyaka,delivered,7,SampleCourier 6,2,2,24.75,24.75,2.50,27.25,27.25,1,0,0,1,0,44.00,39
+178,2026-06-07,2026-06-01,2026,6,June,delivered,57,6,Sample Restaurant 5,Plovdiv,Central,delivered,8,SampleCourier 7,2,4,47.50,47.50,3.00,50.50,50.50,1,1,0,1,0,45.00,40
+179,2026-06-08,2026-06-01,2026,6,June,delivered,58,2,Sample Restaurant 1,Plovdiv,Trakia,delivered,9,SampleCourier 8,2,4,29.25,29.25,1.50,30.75,30.75,1,0,0,1,0,46.00,41
+180,2026-06-09,2026-06-01,2026,6,June,delivered,59,3,Sample Restaurant 2,Plovdiv,Karshiyaka,delivered,2,SampleCourier 1,2,3,29.50,29.50,2.00,31.50,31.50,1,0,0,1,0,47.00,42
+181,2026-06-10,2026-06-01,2026,6,June,delivered,60,4,Sample Restaurant 3,Plovdiv,Central,delivered,3,SampleCourier 2,2,3,34.25,34.25,2.50,36.75,36.75,1,0,0,1,0,48.00,43
+182,2026-06-11,2026-06-01,2026,6,June,delivered,61,5,Sample Restaurant 4,Plovdiv,Trakia,delivered,4,SampleCourier 3,2,5,57.50,57.50,3.00,60.50,60.50,1,0,0,1,0,49.00,44
+183,2026-06-12,2026-06-01,2026,6,June,cancelled,62,6,Sample Restaurant 5,Plovdiv,Karshiyaka,no_delivery,unassigned,Unassigned,2,2,21.25,0,0,0,0,0,0,0,0,1,,
